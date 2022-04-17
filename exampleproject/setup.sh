@@ -1,1 +1,0 @@
-mvn install:install-file -Dfile=./src/main/resources/AMGN.jar -DgroupId=com.github.dsipaint -DartifactId=AMGN -Dversion=0.0.1-SNAPSHOT -Dpackaging=jar -DgeneratePom=true
