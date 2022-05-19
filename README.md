@@ -22,3 +22,6 @@ Random scripts I found it hard to categorise
 
 - `aws_creds.sh`
 Will ask for your AWS CLI keys so you don't have to set the environment variables yourself
+
+- `aws_ssh_pass.sh`
+Will ask you to set a password and enable password authentication for ssh on an EC2 instance
