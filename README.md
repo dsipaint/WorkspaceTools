@@ -2,17 +2,15 @@
 Scripts and useful shortcuts for my wsl environment
 
 ### HOWTO
-for now, these scripts are standalone and you must call the script to use it. Down the line, I will use a script to set these scripts up as actual commands, and a Makefile to allow certain packages to be installed.
-In time, `setup.sh` setup these commands, but for now, it is blank.
+
 
 ## Java
 Scripts involving configuring java, or projects written for java
 
-- `AMGNdependencyresolve.sh`
-Will add the latest build of AMGN to your system's classpath
-
-- `build_AMGN.sh`
-Will build the latest version of AMGN for you in the directory format it needs to run as an executable, ready for use
+- `AMGN.sh`
+Contains 2 commands
+    - `AMGNdependency` will add AMGN to the system classpath
+    - `build_AMGN` will actually build out AMGN for you
 
 - `jdk17.sh`
 Will configure the JDK 17 classpath for you, assuming you have openjdk-17 installed
@@ -20,8 +18,15 @@ Will configure the JDK 17 classpath for you, assuming you have openjdk-17 instal
 ## Misc
 Random scripts I found it hard to categorise
 
-- `aws_creds.sh`
-Will ask for your AWS CLI keys so you don't have to set the environment variables yourself
+- `aws.sh`
+Contains 2 commands
+    - `aws_creds` will make setting aws creds easier
+    - `aws_ssh_pass` will allow password authentication on an AWS EC2 instance, in case you either want to use a password or want to use the VSC ssh editor on the EC2 instance
 
-- `aws_ssh_pass.sh`
-Will ask you to set a password and enable password authentication for ssh on an EC2 instance
+- `aliases.sh`
+Contains the following aliases:
+    - `twitch` calls ~/twitch-cli_1.1.6_Linux_x86_64/twitch
+
+- `tools.sh`
+Contains useful commands:
+    - `publicise` moves a file from WSL to my windows desktop
