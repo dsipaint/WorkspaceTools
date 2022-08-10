@@ -3,6 +3,7 @@ Scripts and useful shortcuts for my wsl environment
 
 ### HOWTO
 #### To set up:
+clone this repo in your home directory
 add the `setup.sh` file to your .bashrc e.g. `source ~/WorkspaceTools/setup.sh`
 run `install`
 

@@ -1,5 +1,5 @@
 #!/bin/bash
 
 #load scripts
-source ./java/*.sh
-source ./misc/*.sh
+source ~/WorkspaceTools/java/*.sh
+source ~/WorkspaceTools/misc/*.sh
