@@ -1,7 +1,7 @@
 #!/bin/bash
 
 #move files easily from WSL to windows desktop
-function publicise(file)
+function publicise ()
 {
-    mv $file /mnt/c/Users/finla/OneDrive/Desktop
+    mv $1 /mnt/c/Users/finla/OneDrive/Desktop
 }
