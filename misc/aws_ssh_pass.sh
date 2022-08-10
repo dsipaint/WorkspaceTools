@@ -6,4 +6,4 @@
 sudo sed -i 's/PasswordAuthentication no/PasswordAuthentication yes/g' /etc/ssh/sshd_config
 sudo passwd ubuntu
 sudo service sshd restart
-echo You can now login as ubuntu using the password you set on this machine
+echo "You can now login as \"ubuntu\" using the password you set on this machine"
