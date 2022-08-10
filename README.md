@@ -2,7 +2,13 @@
 Scripts and useful shortcuts for my wsl environment
 
 ### HOWTO
+#### To set up:
+add the `setup.sh` file to your .bashrc e.g. `source ~/WorkspaceTools/setup.sh`
+run `install`
 
+#### To remove this tool completely
+run `uninstall`
+remove the line you added in .bashrc
 
 ## Java
 Scripts involving configuring java, or projects written for java
