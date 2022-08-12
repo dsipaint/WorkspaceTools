@@ -1,11 +1,6 @@
 # WorkspaceTools
 Scripts and useful shortcuts for my wsl environment
 
-# TODO
-- add in commands to put characters my keyboard is missing into my clipboard
-e.g. "pipe" puts a | into my clipboard
-need pipe and backslash atm
-
 ### HOWTO
 #### To set up:
 clone this repo in your home directory
@@ -45,6 +40,8 @@ Contains the following environment variables:
     - `cdrive` is my c drive
     - `hdrive` is my h drive
     - `zdrive` is my z drive
+    - `backslash` is a backslash character because my keyboard doesn't have one (so I can do `echo $backslash` and have one to paste)
+    - `pipe` is a pipe character because my keyboard doesn't have one
 
 - `tools.sh`
 Contains useful commands:
