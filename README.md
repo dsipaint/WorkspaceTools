@@ -34,6 +34,14 @@ Contains 2 commands
 Contains the following aliases:
     - `twitch` calls ~/twitch-cli_1.1.6_Linux_x86_64/twitch
 
+- `env_vars.sh`
+Contains the following environment variables:
+    - `windows` is my windows desktop
+    - `cdrive` is my c drive
+    - `hdrive` is my h drive
+    - `zdrive` is my z drive
+
 - `tools.sh`
 Contains useful commands:
-    - `publicise` moves a file from WSL to my windows desktop
+    - `mvw` moves a file from WSL to my windows desktop
+    - `cpw` moves a file from WSL to my windows desktop
