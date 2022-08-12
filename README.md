@@ -1,6 +1,11 @@
 # WorkspaceTools
 Scripts and useful shortcuts for my wsl environment
 
+# TODO
+- add in commands to put characters my keyboard is missing into my clipboard
+e.g. "pipe" puts a | into my clipboard
+need pipe and backslash atm
+
 ### HOWTO
 #### To set up:
 clone this repo in your home directory
