@@ -10,9 +10,8 @@ source ~/WorkspaceTools/java/jdk17.sh
 source ~/WorkspaceTools/misc/aliases.sh
 source ~/WorkspaceTools/misc/aws.sh
 source ~/WorkspaceTools/misc/env_vars.sh
-source ~/WorkspaceTools/misc/install.sh
 source ~/WorkspaceTools/misc/tools.sh
-source ~/WorkspaceTools/misc/uninstall.sh
+source ~/WorkspaceTools/misc/mongodb/start_db.sh
 
 
 #add cool ascii art B)

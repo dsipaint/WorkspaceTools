@@ -47,3 +47,10 @@ Contains the following environment variables:
 Contains useful commands:
     - `mvw` moves a file from WSL to my windows desktop
     - `cpw` moves a file from WSL to my windows desktop
+
+- mongodb
+run these scripts to setup and use mongodb
+  - `install_mongo.sh` installs mongodb
+  -  `start_db.sh` starts the database
+  -  `stop_db.sh` stops the database
+  -  `restart_db.sh` restarts the database
