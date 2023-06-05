@@ -51,6 +51,4 @@ Contains useful commands:
 - mongodb
 run these scripts to setup and use mongodb
   - `install_mongo.sh` installs mongodb
-  -  `start_db.sh` starts the database
-  -  `stop_db.sh` stops the database
-  -  `restart_db.sh` restarts the database
+  -  adds the command `start_db` which will start the database
