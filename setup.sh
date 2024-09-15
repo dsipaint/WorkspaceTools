@@ -1,17 +1,19 @@
 #!/bin/bash
 
+SCRIPT_DIR=$( cd -- "$( dirname -- "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )
+
 #move out of system32 for wsl
 cd
 
 #load scripts
-source ~/WorkspaceTools/java/AMGN.sh
-source ~/WorkspaceTools/java/jdk17.sh
+source $SCRIPT_DIR/java/AMGN.sh
+source $SCRIPT_DIR/java/jdk17.sh
 
-source ~/WorkspaceTools/misc/aliases.sh
-source ~/WorkspaceTools/misc/aws.sh
-source ~/WorkspaceTools/misc/env_vars.sh
-source ~/WorkspaceTools/misc/tools.sh
-source ~/WorkspaceTools/misc/mongodb/start_db.sh
+source $SCRIPT_DIR/misc/aliases.sh
+source $SCRIPT_DIR/misc/aws.sh
+source $SCRIPT_DIR/misc/env_vars.sh
+source $SCRIPT_DIR/misc/tools.sh
+source $SCRIPT_DIR/misc/mongodb/start_db.sh
 
 
 #add cool ascii art B)
