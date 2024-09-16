@@ -17,6 +17,7 @@ service ssh restart
 
 useradd alspal
 echo 'alspal:${var.password}' | sudo chpasswd
+mkhomedir_helper alspal
 EOF
     
     security_groups = [
