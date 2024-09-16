@@ -15,6 +15,7 @@ source $SCRIPT_DIR/misc/env_vars.sh
 source $SCRIPT_DIR/misc/tools.sh
 source $SCRIPT_DIR/misc/mongodb/start_db.sh
 
+source $SCRIPT_DIR/aws/testbox.sh
 
 #add cool ascii art B)
 RED='\033[0;31m'
