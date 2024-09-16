@@ -10,11 +10,16 @@ function testbox()
     for i in "$@"; do
         case $i in
             -c|--create)
-            #TODO what to do if we create
-            cd $SCRIPT_DIR
-            terraform init
-            terraform apply
-            cd $BACK_DIR
+            box_ip=$(aws ec2 describe-instances --filters 'Name=tag:Name, Values=testbox' 'Name=instance-state-name, Values=pending,running' | jq -r .Reservations[0].Instances[0].PublicIpAddress)
+            
+            if [ $box_ip == "null" ]; then
+                cd $SCRIPT_DIR
+                terraform init
+                terraform apply
+                cd $BACK_DIR
+            else
+                testbox -l
+            fi
             ;;
             -d|--destroy)
             instance_id=$(aws ec2 describe-instances --filters 'Name=tag:Name, Values=testbox' 'Name=instance-state-name, Values=pending,running' | jq -r .Reservations[0].Instances[0].InstanceId)
