@@ -20,6 +20,9 @@ function testbox()
                 terraform init
                 terraform apply
                 cd $BACK_DIR
+
+                # fetch the IP and update the file
+                bash $SCRIPT_DIR/updatessh.sh
             else
                 testbox -l
             fi
@@ -46,6 +49,7 @@ function testbox()
                 echo stopped testbox
             else
                 aws ec2 start-instances --instance-ids=$instance_id
+                bash $SCRIPT_DIR/updatessh.sh
                 echo started testbox
             fi
             ;;
