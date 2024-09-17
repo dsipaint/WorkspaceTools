@@ -19,11 +19,7 @@ echo 'ssh pwauth: true' >> /etc/cloud/cloud.cfg
 echo 'PasswordAuthentication yes' > /etc/ssh/sshd_config.d/60-cloudimg-settings.conf
 service ssh restart
 
-useradd alspal
-echo 'alspal:${var.password}' | sudo chpasswd
-adduser alspal sudo
-mkhomedir_helper alspal
-cp /home/ubuntu/.bashrc /home/alspal
+echo 'ubuntu:${var.password}' | sudo chpasswd
 EOF
 
     # SSH key to use
