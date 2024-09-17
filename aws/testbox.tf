@@ -5,7 +5,11 @@ variable "password" {
 
 resource "aws_instance" "testbox" {
     ami = "ami-0776c814353b4814d" #ubuntu 20.04
-    instance_type = "t2.micro"
+    instance_type = "t2.small"
+    
+    security_groups = [
+        "test-sg"
+    ]
 
     user_data = <<EOF
 #!/bin/bash
@@ -17,12 +21,10 @@ service ssh restart
 
 useradd alspal
 echo 'alspal:${var.password}' | sudo chpasswd
+adduser alspal sudo
 mkhomedir_helper alspal
+cp /home/ubuntu/.bashrc /home/alspal
 EOF
-    
-    security_groups = [
-        "test-sg"
-    ]
 
     # SSH key to use
     key_name = "bot-server-ssh-keypair"

@@ -43,10 +43,10 @@ function testbox()
             instance_id=$(echo $box_info | jq -r .Reservations[0].Instances[0].InstanceId)
             if [ $instance_state == "running" ] || [ $instance_state == "pending" ]; then
                 aws ec2 stop-instances --instance-ids=$instance_id
-                echo started testbox
+                echo stopped testbox
             else
                 aws ec2 start-instances --instance-ids=$instance_id
-                echo stopped testbox
+                echo started testbox
             fi
             ;;
         esac
