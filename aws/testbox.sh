@@ -15,7 +15,7 @@ function testbox()
             -c|--create)
             box_state=$(echo $box_info | jq -r .Reservations[0].Instances[0].State.Name)
             
-            if [ $box_state == "null" ]; then
+            if [ $box_state == null ]; then # if there is no box, create one
                 cd $SCRIPT_DIR
                 terraform init
                 terraform apply
@@ -23,8 +23,10 @@ function testbox()
 
                 # fetch the IP and update the file
                 bash $SCRIPT_DIR/updatessh.sh
+            elif [ $box_state == "stopped" ]; then # if there is a stopped box, turn it on
+                testbox -t
             else
-                testbox -l
+                testbox -l # if there is a live box, log into it
             fi
             ;;
             -d|--destroy)
