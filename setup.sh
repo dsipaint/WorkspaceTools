@@ -10,12 +10,12 @@ source $SCRIPT_DIR/java/AMGN.sh
 source $SCRIPT_DIR/java/jdk17.sh
 
 source $SCRIPT_DIR/misc/aliases.sh
-source $SCRIPT_DIR/misc/aws.sh
 source $SCRIPT_DIR/misc/env_vars.sh
 source $SCRIPT_DIR/misc/tools.sh
-source $SCRIPT_DIR/misc/mongodb/start_db.sh
 
+source $SCRIPT_DIR/aws/aws_auth.sh
 source $SCRIPT_DIR/aws/testbox.sh
+source $SCRIPT_DIR/aws/updatetestboxssh.sh
 
 #add cool ascii art B)
 RED='\033[0;31m'

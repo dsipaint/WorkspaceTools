@@ -16,7 +16,7 @@ function testbox()
             box_state=$(echo $box_info | jq -r .Reservations[0].Instances[0].State.Name)
             
             if [ $box_state == null ]; then # if there is no box, create one
-                cd $SCRIPT_DIR
+                cd $SCRIPT_DIR/testbox
                 terraform init
                 terraform apply
                 cd $BACK_DIR

@@ -22,7 +22,7 @@ function aws_creds()
 
 # this script will allow password authentication on an AWS EC2 instance, in case you either want
 # to use a password or want to use the VSC ssh editor on the EC2 instance
-function aws_ssh_pass()
+function ec2_ssh_pass()
 {
     sudo sed -i 's/PasswordAuthentication no/PasswordAuthentication yes/g' /etc/ssh/sshd_config
     sudo passwd ubuntu
