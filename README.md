@@ -57,7 +57,7 @@ Contains the following environment variables:
 - `mvw` moves a file from WSL to my windows desktop
 - `cpw` moves a file from WSL to my windows desktop
 
-- `start_db`
+- `upload_blogpost [project name]` lets you upload a directory as a blogpost to my website (if you have my creds)
 
 # ONE-OFF SCRIPTS
 There are a couple of scripts that will only ever need to be run once, so they are not included in the setup script and should be manually called. Run these once in your environment, or if you uninstall them:

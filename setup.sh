@@ -12,6 +12,7 @@ source $SCRIPT_DIR/java/jdk17.sh
 source $SCRIPT_DIR/misc/aliases.sh
 source $SCRIPT_DIR/misc/env_vars.sh
 source $SCRIPT_DIR/misc/tools.sh
+source $SCRIPT_DIR/misc/upload_blogpost.sh
 
 source $SCRIPT_DIR/aws/aws_auth.sh
 source $SCRIPT_DIR/aws/testbox.sh
